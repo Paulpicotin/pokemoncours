@@ -2,12 +2,12 @@ package core;
 
 public class Niveau {
 
-	public static final int XP_NIVEAU_1 = 0;
-	public static final int XP_NIVEAU_2 = 5;
-	public static final int XP_NIVEAU_3 = 15;
-	public static final int XP_NIVEAU_4 = 30;
-	public static final int XP_NIVEAU_5 = 100;
-	
+	private static final int XP_NIVEAU_1 = 0;
+	private static final int XP_NIVEAU_2 = 5;
+	private static final int XP_NIVEAU_3 = 15;
+	private static final int XP_NIVEAU_4 = 30;
+	private static final int XP_NIVEAU_5 = 100;
+
 	public static int niveauCorrespondant(int xp) {
 		//Alerte, ce code est horrible, il doit être retravaillé quand on aura vu les tableaux / collections
 		if (xp > XP_NIVEAU_5) {
@@ -27,5 +27,5 @@ public class Niveau {
 		}
 		return 0;
 	}
-	
+
 }
